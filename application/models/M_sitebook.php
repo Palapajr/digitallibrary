@@ -7,7 +7,7 @@ class M_sitebook extends CI_Model
     var $order = array('nama' => 'asc'); // default order 
  
     private function _get_datatables_query()
-    {
+    { 
  
         $this->db->from($this->table);
  
