@@ -60,5 +60,39 @@ class M_sitebook extends CI_Model
     {
         $this->db->from($this->table);
         return $this->db->count_all_results();
+    } 
+
+    public function simpan($nama, $kategori, $keterangan, $link)
+    {
+        $simpan = [
+            'nama' => $nama,
+            'kategori' => $kategori,
+            'keterangan' => $keterangan,
+            'link' => $link
+        ];
+        $this->db->insert('site', $simpan);
+    }
+
+    public function ambildata($nama)
+    {
+        return $this->db->get_where('site', ['nama' => $nama]);
+    }
+
+    public function update($nama, $kategori, $keterangan, $link){
+
+        $simpan = [
+            'nama' => $nama,
+            'kategori' => $kategori,
+            'keterangan' => $keterangan,
+            'link' => $link
+        ];
+
+        $this->db->where('nama', $nama);
+        $this->db->update('site', $simpan);
+    }
+
+    public function hapus($nama)
+    {
+        return $this->db->delete('site', ['nama' => $nama]);
     }
 }

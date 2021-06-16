@@ -26,25 +26,18 @@
         <link rel="apple-touch-icon" sizes="180x180" href="<?= base_url() ?>public/assets/media/favicons/apple-touch-icon-180x180.png">
         <!-- END Icons -->
 
-        <!-- END Stylesheets -->
-        
-
-        <!-- Sweetalert -->
-        <link rel="stylesheet" href="<?= base_url() ?>public/assets/sweetalert2/dist/sweetalert2.min.css">
-        <script src="<?= base_url() ?>public/assets/sweetalert2/dist/sweetalert2.all.min.js"></script>
-
-        
-        <!-- Stylesheets -->
-
         <!-- Fonts and Codebase framework -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,400i,600,700">
         <link rel="stylesheet" id="css-main" href="<?= base_url() ?>public/assets/css/codebase.min.css">
 
+        <!-- END Stylesheets -->
         <script src="<?= base_url() ?>public/assets/js/codebase.core.min.js"></script>
 
-        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
-        <!-- <link rel="stylesheet" id="css-theme" href="<?= base_url() ?>public/assets/css/themes/flat.min.css"> -->
-        <!-- END Stylesheets -->
+        <!-- Sweetalert -->
+        <link rel="stylesheet" href="<?= base_url() ?>public/assets/sweetalert2/dist/sweetalert2.min.css">
+        <script src="<?= base_url() ?>public/assets/sweetalert2/dist/sweetalert2.all.min.js"></script>
+       
+
     </head>
 
         <div id="page-container" class="sidebar-o enable-page-overlay side-scroll page-header-modern main-content-narrow">
@@ -201,31 +194,31 @@
                                 </div>
                                 <div class="col-2 mb-5">
                                     <a class="text-elegance" data-toggle="theme"
-                                        data-theme="<?= base_url() ?>assets/css/themes/elegance.min.css" href="javascript:void(0)">
+                                        data-theme="<?= base_url() ?>public/assets/css/themes/elegance.min.css" href="javascript:void(0)">
                                         <i class="fa fa-2x fa-circle"></i>
                                     </a>
                                 </div>
                                 <div class="col-2 mb-5">
                                     <a class="text-pulse" data-toggle="theme"
-                                        data-theme="<?= base_url() ?>assets/css/themes/pulse.min.css" href="javascript:void(0)">
+                                        data-theme="<?= base_url() ?>public/assets/css/themes/pulse.min.css" href="javascript:void(0)">
                                         <i class="fa fa-2x fa-circle"></i>
                                     </a>
                                 </div>
                                 <div class="col-2 mb-5">
-                                    <a class="text-flat" data-toggle="theme" data-theme="<?= base_url() ?>assets/css/themes/flat.min.css"
+                                    <a class="text-flat" data-toggle="theme" data-theme="<?= base_url() ?>public/assets/css/themes/flat.min.css"
                                         href="javascript:void(0)">
                                         <i class="fa fa-2x fa-circle"></i>
                                     </a>
                                 </div>
                                 <div class="col-2 mb-5">
                                     <a class="text-corporate" data-toggle="theme"
-                                        data-theme="<?= base_url() ?>assets/css/themes/corporate.min.css" href="javascript:void(0)">
+                                        data-theme="<?= base_url() ?>public/assets/css/themes/corporate.min.css" href="javascript:void(0)">
                                         <i class="fa fa-2x fa-circle"></i>
                                     </a>
                                 </div>
                                 <div class="col-2 mb-5">
                                     <a class="text-earth" data-toggle="theme"
-                                        data-theme="<?= base_url() ?>assets/css/themes/earth.min.css" href="javascript:void(0)">
+                                        data-theme="<?= base_url() ?>public/assets/css/themes/earth.min.css" href="javascript:void(0)">
                                         <i class="fa fa-2x fa-circle"></i>
                                     </a>
                                 </div>
