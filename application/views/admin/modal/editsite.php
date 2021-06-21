@@ -15,6 +15,7 @@
                     <div class="col-6">
                         <div class="form-material">
                             <input type="text" class="form-control" id="nama" name="nama" value="<?= $nama ?>">
+                            <input type="hidden" name="nama_lama" value="<?= $nama?>">
                             <label for="nama">Judul Site</label>
                         </div>
                     </div>
@@ -29,7 +30,7 @@
                 <div class="form-group row">
                     <div class="col-12">
                         <div class="form-material">
-                            <textarea class="form-control" id="keterangan" name="keterangan" value="<?= $keterangan ?>"></textarea>
+                            <textarea class="form-control" id="keterangan" name="keterangan" rows="3"><?= $keterangan ?></textarea>
                             <label for="keterangan">Keterangan Singkat</label>
                         </div>
                     </div>
@@ -46,6 +47,7 @@
 
             </div>
             <div class="modal-footer">
+                
                 <button type="button" class="btn btn-alt-danger" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                 <button type="submit" class="btn btn-alt-success">
                     <i class="fa fa-check"></i> Simpan

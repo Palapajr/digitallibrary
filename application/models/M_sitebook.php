@@ -2,7 +2,7 @@
 class M_sitebook extends CI_Model
 {
     var $table = 'site'; //nama tabel dari database
-    var $column_order = array(null,'nama','kategori','link','created_date',null); //Sesuaikan dengan field
+    var $column_order = array(null,'nama','kategori','link','created_date',null,'updated_date'); //Sesuaikan dengan field
     var $column_search = array('nama','kategori'); //field yang diizin untuk pencarian 
     var $order = array('nama' => 'asc'); // default order 
  
@@ -86,13 +86,19 @@ class M_sitebook extends CI_Model
             'keterangan' => $keterangan,
             'link' => $link
         ];
-
-        $this->db->where('nama', $nama);
+        $nama_lama = $this->input->post('nama_lama'); //gunakan jika awalan ingin di update juga
+        $this->db->where('nama', $nama_lama);
         $this->db->update('site', $simpan);
     }
 
     public function hapus($nama)
     {
         return $this->db->delete('site', ['nama' => $nama]);
+    }
+
+    public function tampil_sum()
+    {
+        $query = $this->db->get('site');
+		return $query->num_rows();
     }
 }

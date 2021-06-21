@@ -42,11 +42,8 @@ class Sitebook extends CI_Controller {
                 <i class=\"fa fa-trash\"></i>
             </button>";
 
-            
                 $links = "<a href=\"".$field->link."\" target=\"_blank\">".$field->link."</a>";
 
-            
-               
                 $row[] = $no;
                 $row[] = $field->nama;
                 $row[] = $field->kategori;
@@ -125,7 +122,7 @@ class Sitebook extends CI_Controller {
             if ($ambildata->num_rows() > 0) {
                 $row = $ambildata->row_array();
                 $data = [
-                    'nama' => $row['nama'],
+                    'nama' => $nama,
                     'kategori' => $row['kategori'],
                     'keterangan' => $row['keterangan'],
                     'link' => $row['link']                    

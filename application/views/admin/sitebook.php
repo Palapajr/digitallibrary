@@ -18,7 +18,8 @@
 
             </div>
             <div class="block-content block-content-full">
-                <table class="table table-responsive table-hover display nowrap" style="width:100%" id="datasitebook">
+
+                <table class="table table-bordered table-striped table-vcenter js-dataTable-full nowrap" style="width:100%" id="datasitebook">
                     <thead>
                         <tr class="text-center">
                             <th>No</th>
