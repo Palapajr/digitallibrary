@@ -143,9 +143,11 @@
                                 <a class="<?php if ($menu == "dashboard") { echo "active"; } ?>" href="<?= site_url('Dashboard') ?>"><i class="si si-cup"></i><span class="sidebar-mini-hide">Dashboard</span></a>
                             </li>
 
+                            <?php if ($this->session->userdata('level') == 1) {?>
                             <li>
                                 <a class="<?php if ($menu == "user") { echo "active"; } ?>" href="<?= site_url('User') ?>"><i class="si si-user"></i><span class="sidebar-mini-hide">Data User</span></a>
                             </li>
+                            <?php }?>
 
                             <li>
                                 <a class="<?php if ($menu == "ebook") { echo "active"; } ?>" href="<?= site_url('Ebook') ?>"><i class="si si-book-open"></i><span class="sidebar-mini-hide">E-Book</span></a>
@@ -188,37 +190,37 @@
                             <div class="row no-gutters text-center mb-5">
                                 <div class="col-2 mb-5">
                                     <a class="text-default" data-toggle="theme" data-theme="default"
-                                        href="javascript:void(0)">
+                                        href="">
                                         <i class="fa fa-2x fa-circle"></i>
                                     </a>
                                 </div>
                                 <div class="col-2 mb-5">
                                     <a class="text-elegance" data-toggle="theme"
-                                        data-theme="<?= base_url() ?>public/assets/css/themes/elegance.min.css" href="javascript:void(0)">
+                                        data-theme="<?= base_url() ?>public/assets/css/themes/elegance.min.css" href="">
                                         <i class="fa fa-2x fa-circle"></i>
                                     </a>
                                 </div>
                                 <div class="col-2 mb-5">
                                     <a class="text-pulse" data-toggle="theme"
-                                        data-theme="<?= base_url() ?>public/assets/css/themes/pulse.min.css" href="javascript:void(0)">
+                                        data-theme="<?= base_url() ?>public/assets/css/themes/pulse.min.css" href="">
                                         <i class="fa fa-2x fa-circle"></i>
                                     </a>
                                 </div>
                                 <div class="col-2 mb-5">
                                     <a class="text-flat" data-toggle="theme" data-theme="<?= base_url() ?>public/assets/css/themes/flat.min.css"
-                                        href="javascript:void(0)">
+                                        href="">
                                         <i class="fa fa-2x fa-circle"></i>
                                     </a>
                                 </div>
                                 <div class="col-2 mb-5">
                                     <a class="text-corporate" data-toggle="theme"
-                                        data-theme="<?= base_url() ?>public/assets/css/themes/corporate.min.css" href="javascript:void(0)">
+                                        data-theme="<?= base_url() ?>public/assets/css/themes/corporate.min.css" href="">
                                         <i class="fa fa-2x fa-circle"></i>
                                     </a>
                                 </div>
                                 <div class="col-2 mb-5">
                                     <a class="text-earth" data-toggle="theme"
-                                        data-theme="<?= base_url() ?>public/assets/css/themes/earth.min.css" href="javascript:void(0)">
+                                        data-theme="<?= base_url() ?>public/assets/css/themes/earth.min.css" href="">
                                         <i class="fa fa-2x fa-circle"></i>
                                     </a>
                                 </div>
@@ -256,7 +258,7 @@
                                 aria-labelledby="page-header-user-dropdown">
                                 <!-- Link kan ke auth-->
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="<?= base_url('auth') ?>">
+                                <a class="dropdown-item" href="<?= site_url('auth/logout') ?>">
                                     <i class="si si-logout mr-5"></i> Login
                                 </a>
                             </div>
