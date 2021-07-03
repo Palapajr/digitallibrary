@@ -41,6 +41,11 @@ class Auth extends CI_Controller {
 		}
 	}
 
+	public function indexregistrasi(Type $var = null)
+	{
+		$this->load->view('registrasi');
+	}
+
 	public function logout()
 	{
 		$array = ['id_user', 'level'];

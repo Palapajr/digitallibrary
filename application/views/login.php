@@ -26,7 +26,10 @@
         <link rel="apple-touch-icon" sizes="180x180" href="<?= base_url() ?>public/assets/media/favicons/apple-touch-icon-180x180.png">
         <!-- END Icons -->
 
-        <!-- Stylesheets -->
+             <!-- Sweetalert -->
+             <link rel="stylesheet" href="<?= base_url() ?>public/assets/sweetalert2/dist/sweetalert2.min.css">
+        <script src="<?= base_url() ?>public/assets/sweetalert2/dist/sweetalert2.all.min.js"></script>
+       
 
         <!-- Fonts and Codebase framework -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,400i,600,700">
@@ -92,7 +95,7 @@
                                             <i class="si si-login mr-10"></i> Sign In
                                         </button>
                                         <div class="mt-30">
-                                            <a class="link-effect text-muted mr-10 mb-5 d-inline-block" href="">
+                                            <a class="link-effect text-muted mr-10 mb-5 d-inline-block" href="<?= site_url('Auth/indexregistrasi') ?>">
                                                 <i class="fa fa-plus mr-5"></i> Create Account
                                             </a>
 
